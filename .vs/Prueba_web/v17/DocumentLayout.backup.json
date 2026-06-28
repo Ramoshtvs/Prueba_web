@@ -3,28 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Ramos\\OneDrive\\Desktop\\Prueba_web\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2D20E65A-5EA6-480C-99F9-0374E80371AB}|..\\Backend\\Backend.csproj|c:\\users\\ramos\\onedrive\\desktop\\backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{B5CEE1AB-68C5-FCEC-EA61-653FFB609ED2}|Backend\\Backend.csproj|c:\\users\\ramos\\onedrive\\desktop\\prueba_web\\backend\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5CEE1AB-68C5-FCEC-EA61-653FFB609ED2}|Backend\\Backend.csproj|solutionrelative:backend\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2D20E65A-5EA6-480C-99F9-0374E80371AB}|..\\Backend\\Backend.csproj|c:\\users\\ramos\\onedrive\\desktop\\backend\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2D20E65A-5EA6-480C-99F9-0374E80371AB}|..\\Backend\\Backend.csproj|c:\\users\\ramos\\onedrive\\desktop\\backend\\models\\empleadostdo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2D20E65A-5EA6-480C-99F9-0374E80371AB}|..\\Backend\\Backend.csproj|c:\\users\\ramos\\onedrive\\desktop\\backend\\models\\empleados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{192966CD-4A61-4830-AFB3-EFA80C1ED852}|..\\Prueba1\\Prueba1.csproj|c:\\users\\ramos\\onedrive\\desktop\\prueba1\\models\\empleados.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{192966CD-4A61-4830-AFB3-EFA80C1ED852}|..\\Prueba1\\Prueba1.csproj|c:\\users\\ramos\\onedrive\\desktop\\prueba1\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{192966CD-4A61-4830-AFB3-EFA80C1ED852}|..\\Prueba1\\Prueba1.csproj|c:\\users\\ramos\\onedrive\\desktop\\prueba1\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{192966CD-4A61-4830-AFB3-EFA80C1ED852}|..\\Prueba1\\Prueba1.csproj|c:\\users\\ramos\\onedrive\\desktop\\prueba1\\prueba1.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{B5CEE1AB-68C5-FCEC-EA61-653FFB609ED2}|Backend\\Backend.csproj|c:\\users\\ramos\\onedrive\\desktop\\prueba_web\\backend\\data\\bddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B5CEE1AB-68C5-FCEC-EA61-653FFB609ED2}|Backend\\Backend.csproj|solutionrelative:backend\\data\\bddata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -39,105 +23,27 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Ramos\\OneDrive\\Desktop\\Backend\\appsettings.json",
-              "RelativeDocumentMoniker": "..\\Backend\\appsettings.json",
-              "ToolTip": "C:\\Users\\Ramos\\OneDrive\\Desktop\\Backend\\appsettings.json",
-              "RelativeToolTip": "..\\Backend\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-06-28T21:11:06.963Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Prueba1",
-              "DocumentMoniker": "C:\\Users\\Ramos\\OneDrive\\Desktop\\Prueba1\\Prueba1.csproj",
-              "RelativeDocumentMoniker": "..\\Prueba1\\Prueba1.csproj",
-              "ToolTip": "C:\\Users\\Ramos\\OneDrive\\Desktop\\Prueba1\\Prueba1.csproj",
-              "RelativeToolTip": "..\\Prueba1\\Prueba1.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-06-28T16:46:31.342Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Empleados.cs",
-              "DocumentMoniker": "C:\\Users\\Ramos\\OneDrive\\Desktop\\Prueba1\\Models\\Empleados.cs",
-              "RelativeDocumentMoniker": "..\\Prueba1\\Models\\Empleados.cs",
-              "ToolTip": "C:\\Users\\Ramos\\OneDrive\\Desktop\\Prueba1\\Models\\Empleados.cs",
-              "RelativeToolTip": "..\\Prueba1\\Models\\Empleados.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Title": "WeatherForecastController.cs",
+              "DocumentMoniker": "C:\\Users\\Ramos\\OneDrive\\Desktop\\Prueba_web\\Backend\\Controllers\\WeatherForecastController.cs",
+              "RelativeDocumentMoniker": "Backend\\Controllers\\WeatherForecastController.cs",
+              "ToolTip": "C:\\Users\\Ramos\\OneDrive\\Desktop\\Prueba_web\\Backend\\Controllers\\WeatherForecastController.cs",
+              "RelativeToolTip": "Backend\\Controllers\\WeatherForecastController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-28T15:26:16.873Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "EmpleadosTDO.cs",
-              "DocumentMoniker": "C:\\Users\\Ramos\\OneDrive\\Desktop\\Backend\\Models\\EmpleadosTDO.cs",
-              "RelativeDocumentMoniker": "..\\Backend\\Models\\EmpleadosTDO.cs",
-              "ToolTip": "C:\\Users\\Ramos\\OneDrive\\Desktop\\Backend\\Models\\EmpleadosTDO.cs",
-              "RelativeToolTip": "..\\Backend\\Models\\EmpleadosTDO.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAkAAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-28T14:54:21.814Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Empleados.cs",
-              "DocumentMoniker": "C:\\Users\\Ramos\\OneDrive\\Desktop\\Backend\\Models\\Empleados.cs",
-              "RelativeDocumentMoniker": "..\\Backend\\Models\\Empleados.cs",
-              "ToolTip": "C:\\Users\\Ramos\\OneDrive\\Desktop\\Backend\\Models\\Empleados.cs",
-              "RelativeToolTip": "..\\Backend\\Models\\Empleados.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAA4wBMAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-28T14:51:19.42Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\Ramos\\OneDrive\\Desktop\\Prueba1\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "..\\Prueba1\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\Ramos\\OneDrive\\Desktop\\Prueba1\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "..\\Prueba1\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAGsAAAAAAAAAAAAkwHoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-28T06:54:31.285Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Ramos\\OneDrive\\Desktop\\Prueba1\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "..\\Prueba1\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Ramos\\OneDrive\\Desktop\\Prueba1\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "..\\Prueba1\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHAAAABcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-06-28T06:53:43.488Z",
+              "WhenOpened": "2026-06-28T21:47:22.519Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "WeatherForecastController.cs",
-              "DocumentMoniker": "C:\\Users\\Ramos\\OneDrive\\Desktop\\Backend\\Controllers\\WeatherForecastController.cs",
-              "RelativeDocumentMoniker": "..\\Backend\\Controllers\\WeatherForecastController.cs",
-              "ToolTip": "C:\\Users\\Ramos\\OneDrive\\Desktop\\Backend\\Controllers\\WeatherForecastController.cs",
-              "RelativeToolTip": "..\\Backend\\Controllers\\WeatherForecastController.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAAYwEUAAAAAAAAAAAAAAA==",
+              "Title": "BDdata.cs",
+              "DocumentMoniker": "C:\\Users\\Ramos\\OneDrive\\Desktop\\Prueba_web\\Backend\\Data\\BDdata.cs",
+              "RelativeDocumentMoniker": "Backend\\Data\\BDdata.cs",
+              "ToolTip": "C:\\Users\\Ramos\\OneDrive\\Desktop\\Prueba_web\\Backend\\Data\\BDdata.cs",
+              "RelativeToolTip": "Backend\\Data\\BDdata.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-28T05:58:46.873Z",
+              "WhenOpened": "2026-06-28T21:47:19.031Z",
               "EditorCaption": ""
             }
           ]

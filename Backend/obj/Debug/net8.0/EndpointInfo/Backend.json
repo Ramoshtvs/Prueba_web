@@ -1,0 +1,218 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "Backend",
+    "version": "1.0"
+  },
+  "paths": {
+    "/WeatherForecast/GetPuesto": {
+      "get": {
+        "tags": [
+          "WeatherForecast"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/WeatherForecast/GetSucursal": {
+      "get": {
+        "tags": [
+          "WeatherForecast"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/WeatherForecast/GetEmpleados": {
+      "get": {
+        "tags": [
+          "WeatherForecast"
+        ],
+        "parameters": [
+          {
+            "name": "puesto",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/EmpleadosTDO"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/EmpleadosTDO"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/EmpleadosTDO"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/WeatherForecast/CrearEmpleado": {
+      "post": {
+        "tags": [
+          "WeatherForecast"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Empleados"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Empleados"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Empleados"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Empleados": {
+        "type": "object",
+        "properties": {
+          "iD_Empleado": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "nombre_Empleado": {
+            "type": "string",
+            "nullable": true
+          },
+          "edad": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "sexo": {
+            "type": "string",
+            "nullable": true
+          },
+          "iD_Sucursal": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "idSucursal": {
+            "$ref": "#/components/schemas/Sucursal"
+          },
+          "iD_Puesto": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "idPuesto": {
+            "$ref": "#/components/schemas/Puesto"
+          }
+        },
+        "additionalProperties": false
+      },
+      "EmpleadosTDO": {
+        "type": "object",
+        "properties": {
+          "iD_Empleado": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "nombre_Empleado": {
+            "type": "string",
+            "nullable": true
+          },
+          "edad": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "sexo": {
+            "type": "string",
+            "nullable": true
+          },
+          "iD_Sucursal": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "nombre_Sucursal": {
+            "type": "string",
+            "nullable": true
+          },
+          "iD_Puesto": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "nombre_Puesto": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Puesto": {
+        "type": "object",
+        "properties": {
+          "iD_Puesto": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "nombre_Puesto": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Sucursal": {
+        "type": "object",
+        "properties": {
+          "iD_Sucursal": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "nombre_Sucursal": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

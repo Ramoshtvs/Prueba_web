@@ -1,0 +1,162 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@model IEnumerable<Prueba1.Models.Empleados>
+<div class="text-center">
+   
+    <div class="col-md-4">
+        <label class="form-label fw-bold text-muted small">Puesto</label>
+
+        <form method="post" asp-action="BuscarByID" asp-controller="Home">
+            <select class="form-select" name="puestoID" id="ddlPuesto" onchange="this.form.submit()" required>
+                <option value="">-- Selecciona un Puesto --</option>
+                @if (ViewBag.ListaPuestos != null)
+                {
+                    foreach (var puesto in (List<Prueba1.Models.Puesto>)ViewBag.ListaPuestos)
+                    {
+                        if (ViewBag.PuestoSeleccionado == puesto.ID_Puesto)
+                        {
+                            <option value="@puesto.ID_Puesto" selected="selected">@puesto.Nombre_Puesto</option>
+                        }
+                        else
+                        {
+                            <option value="@puesto.ID_Puesto">@puesto.Nombre_Puesto</option>
+                        }
+                    }
+                }
+            </select>
+        </form>
+    </div>
+
+
+
+    <div class="col-lg-11" id="Empleados">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Edad</th>
+                    <th scope="col">Sexo</th>
+                    <th scope="col">sucursal</th>
+                    <th scope="col">puesto</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (Model != null && Model.Any())
+                {
+                    foreach (var emp in Model)
+                    {
+                        <tr>
+                            <td>@emp.ID_Empleado</td>
+                            <td>@emp.Nombre_Empleado</td>
+                            <td>@emp.Edad</td>
+                            <td>@emp.Sexo</td>                            
+                            <td>@emp.Nombre_Sucursal</td>
+                            <td>@emp.Nombre_Puesto</td>
+                        </tr>
+                    }
+                }
+                else
+                {
+                    <tr>
+                        <td colspan="6" class="text-center text-muted">
+                            No se encontraron empleados para el puesto seleccionado.
+                        </td>
+                    </tr>
+                }
+               
+            </tbody>
+        </table>
+    </div>
+
+    <div id="insert" class="col-lg-11">
+        <form id="formEmpleado" asp-action="CrearEmpleado" asp-controller="Home" method="post">
+            <div class="col-md-4">
+                <label class="form-label fw-bold text-muted small">Nombre(s)</label>
+                <input type="text"
+                       name="Nombre_Empleado"
+                       id="txtNombre"
+                       class="form-control form-control-sm"
+                       maxlength="50"
+                       required>
+            </div>
+
+            <div class="col-md-4">
+                <label class="form-label fw-bold text-muted small">Edad</label>                
+                <input type="number"
+                       name="Edad"
+                       id="txtEdad"
+                       class="form-control form-control-sm"
+                       min="1"
+                       max="100"                       
+                       required>
+            </div>
+
+            <div class="col-md-4">
+                <label class="form-label fw-bold text-muted small">Sexo</label>
+                <select class="form-select form-select-sm" name="Sexo" id="ddlSexo" required>
+                    <option value="" selected disabled>--- Selecciona Género ---</option>
+                    <option value="Masculino">Masculino</option>
+                    <option value="Femenino">Femenino</option>
+                </select>
+            </div>
+
+            <div class="col-lg-4">
+                <label class="form-label fw-bold text-muted small">Puesto</label>
+                <select class="form-select" name="ID_Puesto" id="ddlPuestoIn" required>
+                    <option value="">-- Selecciona un Puesto --</option>
+                    @if (ViewBag.ListaPuestos != null)
+                    {
+                        foreach (var puesto in (List<Prueba1.Models.Puesto>)ViewBag.ListaPuestos)
+                        {                           
+                            <option value="@puesto.ID_Puesto">@puesto.Nombre_Puesto</option>
+                            
+                        }
+                    }
+                </select>
+            </div>
+
+            <div class="col-lg-4">
+                <label class="form-label fw-bold text-muted small">Sucursal</label>
+                <select class="form-select" name="ID_Sucursal" id="ddlSucursalIn" required>
+                    <option value="">-- Selecciona una Sucursal --</option>
+                    @if (ViewBag.ListaSucursal != null)
+                    {
+                        foreach (var puesto in (List<Prueba1.Models.Sucursal>)ViewBag.ListaSucursal)
+                        {                           
+                            <option value="@puesto.ID_Sucursal">@puesto.Nombre_Sucursal</option>
+                            
+                        }
+                    }
+                </select>
+            </div>
+
+            <div class="row col-lg-5">
+                <div class="col-lg-6">
+                    <!-- Cambiamos a type="submit" para que envíe el formulario al controlador -->
+                    <button type="submit" class="btn btn-success">+ Agregar</button>
+                </div>
+                <div class="col-lg-6">
+                    <!-- Añadimos un onclick que ejecuta una función para vaciar los campos -->
+                    <button type="button" class="btn btn-danger" onclick="limpiarFormulario()">Cancelar</button>
+                </div>
+            </div>
+
+
+        </form>
+    </div>
+
+</div>
+
+
+<script>
+    function limpiarFormulario() {
+        // 1. Resetea los campos de texto y número
+        document.getElementById("txtNombre").value = "";
+        document.getElementById("txtEdad").value = "";
+        document.getElementById("ddlSexo").selectedIndex = 0;
+        document.getElementById("ddlPuestoIn").selectedIndex = 0;
+        document.getElementById("ddlSucursalIn").selectedIndex = 0;
+    }
+</script>
